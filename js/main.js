@@ -32,7 +32,7 @@ function renderTodos(todos) {
     todos.forEach(function (item) {
         const checked = item.completed ? 'checked' : null
         const li = document.createElement('li')
-        
+
 
         li.classList.add('item', 'list-group-item', 'd-flex', 'justify-content-between', 'align-items-center')
         li.setAttribute('data-key', item.id)
@@ -101,3 +101,4 @@ getFromLocalStorage()
 for (let i = 0; i < todos.length; i++) {
     console.log(todos[i])
 }
+
